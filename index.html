@@ -1,107 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- metadata para proyecto youtube -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descripción del proyecto de YouTube">
-    <meta name="keywords" content="YouTube, proyecto, ejemplo">
-    <meta name="author" content="KevDeveloperfront">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Descripción del proyecto de YouTube" />
+    <meta name="keywords" content="YouTube, proyecto, ejemplo" />
+    <meta name="author" content="KevDeveloperfront" />
     <!-- links de estilos externos para youtube -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZmCULaM1u3Lr9+uT6q6U5z/1hZpKXhZl5d5e5v5m5d5e5v5m5d5e5v5m5d5e5v5m5d5e==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZmCULaM1u3Lr9+uT6q6U5z/1hZpKXhZl5d5e5v5m5d5e5v5m5d5e5v5m5d5e5v5m5d5e=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- links de estilos locales -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
     <title>YouTube</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- estructura del header -->
     <header class="header_container">
-        <div class="logo_section">
-            <i class="fa-brands fa-youtube"></i>
-            <h1>YouTube</h1>
-        </div>
-        <div class="search_bar">
-            <input type="text" placeholder="Search">
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-        </div>
-        <div class="user_actions">
-            <i class="fa-solid fa-video"></i>
-            <i class="fa-solid fa-bell"></i>
-            <img src="user_avatar.png" alt="User Avatar" class="user_avatar">
-        </div>
+      <div class="logo_section">
+        <i class="fa-brands fa-youtube"></i>
+        <h1>YouTube</h1>
+      </div>
+      <div class="search_bar">
+        <input type="text" placeholder="Search" />
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <div class="user_actions">
+        <i class="fa-solid fa-video"></i>
+        <i class="fa-solid fa-bell"></i>
+        <img src="user_avatar.png" alt="User Avatar" class="user_avatar" />
+      </div>
     </header>
 
     <!-- estructura del aside vertical -->
     <aside class="sidebar">
-        <nav>
-            <ul>
-                <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
-                <li><a href="#"><i class="fa-solid fa-fire"></i> Trending</a></li>
-                <li><a href="#"><i class="fa-solid fa-thumbs-up"></i> Subscriptions</a></li>
-                <li><a href="#"><i class="fa-solid fa-bookmark"></i> Library</a></li>
-                <li><a href="#"><i class="fa-solid fa-clock-rotate-left"></i> History</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li>
+            <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-fire"></i> Trending</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-thumbs-up"></i> Subscriptions</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-bookmark"></i> Library</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-clock-rotate-left"></i> History</a
+            >
+          </li>
+        </ul>
+      </nav>
     </aside>
 
     <!-- estructura del main -->
     <main class="main_container">
-        
-        <!-- estructura de seccion de categorias -->
-         <section class="categoria_container">
-            <div class="categoria_card active">All</div>
-            <div class="categoria_card">Music</div>
-            <div class="categoria_card">Gaming</div>
-            <div class="categoria_card">News</div>
-            <div class="categoria_card">Sports</div>
-            <div class="categoria_card">Movies</div>
-            <div class="categoria_card">Live</div>
-            <div class="categoria_card">Fashion</div>
-            <div class="categoria_card">Learning</div>
-            <div class="categoria_card">Travel</div>
-         </section>
+      <!-- estructura de seccion de categorias -->
+      <section class="categoria_container">
+        <div class="categoria_card active">All</div>
+        <div class="categoria_card">Music</div>
+        <div class="categoria_card">Gaming</div>
+        <div class="categoria_card">News</div>
+        <div class="categoria_card">Sports</div>
+        <div class="categoria_card">Movies</div>
+        <div class="categoria_card">Live</div>
+        <div class="categoria_card">Fashion</div>
+        <div class="categoria_card">Learning</div>
+        <div class="categoria_card">Travel</div>
+      </section>
 
-        <!-- estructura del video grid -->
-        <section class="video_grid">
-            <div class="video_card">
-                <img src="./html/assets/multimedia/img/Miniaturas/Estopa_Exiliado_En_El_Lavado.jpg" alt="Grupo Estopa Exiliado En El Lavado" class="video_thumbnail">
-                <h3 class="video_title">Estopa - Exiliado En El Lavado</h3>
-                <p class="video_channel">Estopa</p>
-                <p class="video_views">1M views • 1 week ago</p>
-            </div>
-            <div class="video_card">
-                <img src="./html/assets/multimedia/img/Miniaturas/La_vida_Boheme_IPOSTEL.jpg" alt="La Vida Bohème - IPOSTEL" class="video_thumbnail">
-                <h3 class="video_title">La Vida Bohème - IPOSTEL</h3>
-                <p class="video_channel">La Vida Bohème</p>
-                <p class="video_views">500K views • 2 days ago</p>
-            </div>
-            <div class="video_card">
-                <img src="./html/assets/multimedia/img/Miniaturas/Lebronch_El_Juez.jpg" alt="Lebronch - El Juez" class="video_thumbnail">
-                <h3 class="video_title">Lebronch - El Juez</h3>
-                <p class="video_channel">Lebronch</p>
-                <p class="video_views">200K views • 3 days ago</p>
-            </div>
-            <div class="video_card">
-                <img src="./html/assets/multimedia/img/Miniaturas/La_vide_Bohème_El_Zar.jpg" alt="La Vida Bohème - El Zar" class="video_thumbnail">
-                <h3 class="video_title">La Vida Bohème - El Zar</h3>
-                <p class="video_channel">La Vida Bohème</p>
-                <p class="video_views">800K views • 5 days ago</p>
-            </div>
-            <div class="video_card">
-                <img src="./html/assets/multimedia/img/Miniaturas/Red_Hot_Chili_Peppers_Dani_California.jpg" alt="Red Hot Chili Peppers - Dani California" class="video_thumbnail">
-                <h3 class="video_title">Red Hot Chili Peppers - Dani California</h3>
-                <p class="video_channel">Red Hot Chili Peppers</p>
-                <p class="video_views">1.2M views • 1 month ago</p>
-            </div>
-            <div class="video_card">
-                <img src="./html/assets/multimedia/img/Miniaturas/The_Stroker_Reptilia.jpg" alt="The Stroker - Reptilia" class="video_thumbnail">
-                <h3 class="video_title">The Stroker - Reptilia</h3>
-                <p class="video_channel">The Stroker</p>
-                <p class="video_views">300K views • 4 days ago</p>
-            </div>
-        </section>
+      <!-- Estructura de Shorts -->
+      <section class="shorts_container">
+        <div class="shorts_card">
+          <a
+            href="https://youtube.com/shorts/zFc_QaFxNgk?si=xVL_Z63A9mUSZF36"
+            class="link"
+          >
+            <img
+              src="./html/assets/multimedia/img/Miniaturas/ElEsteparioSiberiano_Avenged_Sevenfold.jpg"
+              alt="El Estepario Siberiano - Avenged Sevenfold"
+              class="shorts_thumbnail"
+            />
+            <p class="shorts_title">Shorts</p>
+          </a>
+        </div>
+        <div class="shorts_card">
+          <a
+            href="https://youtube.com/shorts/esdDHgOBnSM?si=eZNeBBPEbSzUci-0"
+            class="link"
+          >
+            <img
+              src="./html/assets/multimedia/img/Miniaturas/Halocene_Avenged_Sevenfold_Nigthmare.jpg"
+              alt="Halocene - Avenged Sevenfold - Nightmare"
+              class="shorts_thumbnail"
+            />
+            <p class="shorts_title">Shorts</p>
+          </a>
+        </div>
+        <div class="shorts_card">
+          <a
+            href="https://youtube.com/shorts/jJbkRTMN6O4?si=79VvCxpAIKbOtsSZ"
+            class="link"
+          >
+            <img
+              src="./html/assets/multimedia/img/Miniaturas/The_Offspring_All_I_Want _ON_DRUMS_Kriss_drummer.jpg"
+              alt="The Offspring - All I Want - ON DRUMS Kriss drummer"
+              class="shorts_thumbnail"
+            />
+            <p class="shorts_title">Shorts</p>
+          </a>
+        </div>
+        <div class="shorts_card">
+          <a
+            href="https://youtube.com/shorts/rdNvtlUv6Ho?si=5YsZU3XGFwYgnnEI"
+            class="link"
+          >
+            <img
+              src="./html/assets/multimedia/img/Miniaturas/TaekwondoSLtoday_TKD_NewVsOld.jpg"
+              alt="Taekwondo SL today - TKD New Vs Old"
+              class="shorts_thumbnail"
+            />
+            <p class="shorts_title">Shorts</p>
+          </a>
+        </div>
+        <div class="shorts_card">
+          <a
+            href="https://youtube.com/shorts/XaM5s5AnJzE?si=o9enTj-LRDSJbgya"
+            class="link"
+          >
+            <img
+              src="./html/assets/multimedia/img/Miniaturas/PonTuMenteEnBlanco_Kendo.jpg"
+              alt="Shorts"
+              class="shorts_thumbnail"
+            />
+            <p class="shorts_title">Shorts</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- estructura del video grid -->
+      <section class="video_grid">
+        <div class="video_card">
+          <img
+            src="./html/assets/multimedia/img/Miniaturas/Estopa_Exiliado_En_El_Lavado.jpg"
+            alt="Grupo Estopa Exiliado En El Lavado"
+            class="video_thumbnail"
+          />
+          <a
+            href="https://www.youtube.com/watch?v=E4eYqxHb1Wg&list=RDE4eYqxHb1Wg&start_radio=1"
+            class="link_grid"
+          >
+            <h3 class="video_title">Estopa - Exiliado En El Lavado</h3>
+          </a>
+          <p class="video_channel">Estopa</p>
+          <p class="video_views">1M views • 1 week ago</p>
+        </div>
+        <div class="video_card">
+          <img
+            src="./html/assets/multimedia/img/Miniaturas/La_vida_Boheme_IPOSTEL.jpg"
+            alt="La Vida Bohème - IPOSTEL"
+            class="video_thumbnail"
+          />
+          <a href="https://www.youtube.com/watch?v=6mC_l86_2_M&list=RD6mC_l86_2_M&start_radio=1" class="link_grid">
+            <h3 class="video_title">La Vida Bohème - IPOSTEL</h3>
+          </a>
+          <p class="video_channel">La Vida Bohème</p>
+          <p class="video_views">500K views • 2 days ago</p>
+        </div>
+        <div class="video_card">
+          <img
+            src="./html/assets/multimedia/img/Miniaturas/Lebronch_El_Juez.jpg"
+            alt="Lebronch - El Juez"
+            class="video_thumbnail"
+          />
+					<a href="https://www.youtube.com/watch?v=bKDRAHSoNQg&list=RDbKDRAHSoNQg&start_radio=1" class="link_grid">
+						<h3 class="video_title">Lebronch - El Juez</h3>
+					</a>
+          <p class="video_channel">Lebronch</p>
+          <p class="video_views">200K views • 3 days ago</p>
+        </div>
+        <div class="video_card">
+          <img
+            src="./html/assets/multimedia/img/Miniaturas/La_vide_Bohème_El_Zar.jpg"
+            alt="La Vida Bohème - El Zar"
+            class="video_thumbnail"
+          />
+					<a href="https://www.youtube.com/watch?v=S41yTXWe3ss&list=RDS41yTXWe3ss&start_radio=1" class="link_grid">
+						<h3 class="video_title">La Vida Bohème - El Zar</h3>
+					</a>
+          <p class="video_channel">La Vida Bohème</p>
+          <p class="video_views">800K views • 5 days ago</p>
+        </div>
+        <div class="video_card">
+          <img
+            src="./html/assets/multimedia/img/Miniaturas/Red_Hot_Chili_Peppers_Dani_California.jpg"
+            alt="Red Hot Chili Peppers - Dani California"
+            class="video_thumbnail"
+          />
+					<a href="https://www.youtube.com/watch?v=0QMMDSO8904&list=RD0QMMDSO8904&start_radio=1" class="link_grid">
+						<h3 class="video_title">Red Hot Chili Peppers - Dani California</h3>
+					</a>
+          <p class="video_channel">Red Hot Chili Peppers</p>
+          <p class="video_views">1.2M views • 1 month ago</p>
+        </div>
+        <div class="video_card">
+          <img
+            src="./html/assets/multimedia/img/Miniaturas/The_Stroker_Reptilia.jpg"
+            alt="The Stroker - Reptilia"
+            class="video_thumbnail"
+          />
+					<a href="https://www.youtube.com/watch?v=b8-tXG8KrWs&list=RDb8-tXG8KrWs&start_radio=1" class="link_grid">
+						<h3 class="video_title">The Stroker - Reptilia</h3>
+					</a>
+          <p class="video_channel">The Stroker</p>
+          <p class="video_views">300K views • 4 days ago</p>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
