@@ -5,7 +5,7 @@
   --text-color: #fff; /* Texto blanco */
   --card-bg: #181818; /* Cards gris oscuro */
   --border-color: #303030; /* Bordes gris */
-  --accent-color: #ff0000; /* Rojo YouTube */
+  --accent-color: #ff0000; /* Rojo Logo YouTube */
   --secondary-text: #aaa; /* Texto secundario gris */
 }
 
@@ -35,14 +35,14 @@ body {
 
 /* Estilos del contenedor main_container */
 .main_container {
-  margin-left: 240px; /* Ancho sidebar */
-  margin-top: 56px; /* Altura header */
+  margin-left: 240px; 
+  margin-top: 56px; 
   padding: 24px 16px;
-  background-color: var(--bg-color); /* Hereda el fondo del body */
+  background-color: var(--bg-color); 
   width: 100%;
 }
-/* estilos del header */
 
+/* estilos del header */
 .header_container {
   display: flex;
   justify-content: space-between;
@@ -76,7 +76,7 @@ body {
 /* para el modo light */
 
 body.light .logo_section h1 {
-  color: var(--text-color); /* Negro en modo claro */
+  color: var(--text-color); 
 }
 
 .search_bar {
@@ -136,7 +136,7 @@ body.light .logo_section h1 {
 .sidebar {
   position: fixed;
   left: 0;
-  top: 56px; /* Altura del header */
+  top: 56px; 
   bottom: 0;
   width: 240px;
   background-color: var(--card-bg);
@@ -214,7 +214,7 @@ body.light .logo_section h1 {
 }
 
 .shorts_card {
-  flex: 0 0 176px; /* Ancho fijo para ~5 en desktop */
+  flex: 0 0 176px; /* Ancho fijo para 5 shorts en desktop */
   display: flex;
   flex-direction: column;
 }
@@ -282,14 +282,14 @@ body.light .logo_section h1 {
 
 @media (max-width: 768px) {
   .sidebar {
-    display: none; /* Oculta en mobile, YT usa menú hamburguesa */
+    display: none; 
   }
   .main_container {
     margin-left: 0;
     padding: 16px 8px;
   }
   .video_grid {
-    grid-template-columns: 1fr; /* 1 columna en mobile */
+    grid-template-columns: 1fr;   /* 1 columna en dispositivos móviles */
   }
   .shorts_container {
     gap: 8px;
