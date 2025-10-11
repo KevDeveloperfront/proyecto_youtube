@@ -35,7 +35,7 @@ body {
 
 /* Estilos del contenedor main_container */
 .main_container {
-  margin-left: 200px; /* Ajuste: Cambié a 200px para coincidir con el ancho reducido del sidebar (antes 240px) */
+  margin-left: 205px; /* Ajuste: Cambié a 200px para coincidir con el ancho reducido del sidebar (antes 240px) */
   margin-top: 56px;
   padding: 24px 16px;
   background-color: var(--bg-color);
@@ -179,7 +179,7 @@ body.light .logo_section h1 {
   left: 0;
   top: 56px;
   bottom: 0;
-  width: 200px; /* Ancho normal (reducido de 240px) */
+  width: 205px; /* Ancho normal (reducido de 240px) */
   background-color: var(--card-bg);
   overflow-y: auto;
   padding: 12px 0;
